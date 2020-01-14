@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <title>광성마당::::카풀서비스</title>
+    </head>
+    <body>
+        <div class="container-fluid" id="main_container">
+            <div class="row">
+                <!-- 좌측 메뉴 -->
+                <div class="col-3" id="left_col" style="height: 100%;border:1px solid #CCC; padding-top:5px">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#carpool-content" role="tab" aria-controls="pills-home" aria-selected="true">카풀</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#carpool-myinfo" role="tab" aria-controls="pills-profile" aria-selected="false">내정보</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="carpool-contents">
+                                <div class="tab-pane fade show active" id="carpool-content" role="tabpanel" aria-labelledby="carpool-content-tab">
+                                    <div class="row">
+                                        <!-- 검색 탭 -->
+                                        <div class="col-10 d-inline mb-1">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="출발지 검색..." aria-label="Recipient's username">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                        <i class="fas fa-search"></i> 
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 d-inline text-right">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                <i class="fas fa-location-arrow"></i>
+                                            </button>
+                                        </div>
+                                        <!-- 필터조건 : 시간 필터 -->
+                                        <div class="col-12 d-block">
+                                            <select class="form-control">
+                                                <option>전 시간대</option>
+                                                <option>09-12</option>
+                                                <option>12-14</option>
+                                                <option>14-16</option>
+                                                <option>16-18</option>
+                                                <option>18-20</option>
+                                                <option>20-00</option>
+                                            </select>  
+                                        </div>
+                                        <!-- 매칭이 된 운전자, 탑승자 확인 탭 -->
+                                        <div class="col-12" style="overflow: auto ;height: 632px">
+                                            <div style="overflow-y: hidden">
+                                                <div class="clear-fix mb-1"></div>
+
+                                                <div class="card mb-1">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-4">
+                                                          <img src="http://cfs11.tistory.com/image/33/tistory/2009/02/26/22/41/49a69bf854e7c" class="card-img" style="width: 100%; height: 100%">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title mb-1">김도령 (2청)</h5>
+                                                                <p class="card-text mb-1">
+                                                                    <span class="badge badge-secondary"><i class="fas fa-map"></i></span>
+                                                                    <small class="text-muted">광성마당 : 14시출발</small>
+                                                                </p>
+                                                                <p class="card-text mb-1">
+                                                                    <button class="btn-primary">선택</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card mb-1">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-4">
+                                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWifMv93oXQ23lfJORqHI_OyyW-x6UK_KJQ_IfGejN1q7Zy9P&s" class="card-img" style="width: 100%; height: 100%">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title mb-1">정은석 (2청)</h5>
+                                                                <p class="card-text mb-1">
+                                                                    <span class="badge badge-secondary"><i class="fas fa-map"></i></span>
+                                                                    <small class="text-muted">은평구 : 14시출발</small>
+                                                                </p>
+                                                                <p class="card-text mb-1">
+                                                                    <button class="btn-primary">선택</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card mb-1">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-4">
+                                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo292qMKgA__4u0ftO3BRh2nQaYCrKZC96LAiPwbPYk7CiD8bg&s" class="card-img" style="width: 100%; height: 100%">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title mb-2">신민지 (1청)</h5>
+                                                                <p class="card-text mb-1">
+                                                                    <span class="badge badge-secondary"><i class="fas fa-map"></i></span>
+                                                                    <small class="text-muted">인천 구월동 : 12시출발</small>
+                                                                </p>
+                                                                <p class="card-text mb-1">
+                                                                    <button class="btn-primary">선택</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card mb-1">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-4">
+                                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTpmdUUBvpTB5mSEWdNdSmLsb5LO1AcWCmmwqso_5IwEg6uEuK&s" class="card-img" style="width: 100%; height: 100%">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title mb-2">김경민 (2청)</h5>
+                                                                <p class="card-text mb-1">
+                                                                    <span class="badge badge-secondary"><i class="fas fa-map"></i></span>
+                                                                    <small class="text-muted">인천 구월동 : 12시출발</small>
+                                                                </p>
+                                                                <p class="card-text mb-1">
+                                                                    <button class="btn-primary">선택</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card mb-1">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-4">
+                                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuv-1nlkbjNKfPm_qptIpIwwUE19oV5Zobafc_TlhrZJ4cWAct&s" class="card-img" alt="...">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title mb-2">김도령 (2청)</h5>
+                                                                <p class="card-text"><small class="text-muted">광성마당 : 14시출발</small></p>
+                                                                <p class="card-text">
+                                                                    <button class="btn-primary">선택</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="carpool-myinfo" role="tabpanel" aria-labelledby="carpool-myinfo-tab">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card mb-1">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4">
+                                                      <img src="http://cfs11.tistory.com/image/33/tistory/2009/02/26/22/41/49a69bf854e7c" class="card-img" style="width: 100%; height: 100%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-1">김도령 (2청)</h5>
+                                                            <p class="card-text mb-1">
+                                                                <span class="badge badge-secondary"><i class="fas fa-map"></i></span>
+                                                                <small class="text-muted">광성마당 : 14시출발</small>
+                                                            </p>
+                                                            <p class="card-text mb-1">
+                                                                <button class="btn-danger">선택취소</button>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 우측 맵 -->
+                <div class="col-9" id="right_col" style="height: 100%; padding: 0px">
+                    <div id="main_map" style="width: 100%; height: 100%"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appkey=l7xx8b6b673e660245d3b3ebeed73bcb4626"></script>
+        <script>
+            $(function (){
+                DefaultConfigurationFun();
+            });
+
+            /* 기본적인 환경 상황 세팅하기 */
+            function DefaultConfigurationFun(){
+                var defaultHeight = "768px"
+                $("#main_container").css("height",defaultHeight);
+                $("#left_col").css("height",defaultHeight);
+                $("#right_col").css("height",defaultHeight);
+                // var mainMap = new Tmapv2.Map("main_map",{
+                //         center  : new Tmapv2.LatLng(37.566481622437934,126.98502302169841)
+                //     ,   width   : "100%"
+                //     ,   height  : "100%"
+                //     ,   zoom    : 15
+                // });
+            }
+        </script>
+    </body>
+</html>
